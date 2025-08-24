@@ -1,17 +1,24 @@
 {
   "name": "facebook-login",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev" : "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+    "start": "node ./bin/www",
+    "dev" : "npx @tailwindcss/cli -i ./public/stylesheets/src/input.css -o ./public/stylesheets/src/output.css --watch"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.11",
-    "tailwindcss": "^4.1.11"
+    "@tailwindcss/cli": "^4.1.12",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "express-session": "^1.18.2",
+    "http-errors": "~1.6.3",
+    "mongoose": "^8.18.0",
+    "morgan": "~1.9.1",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^8.0.0",
+    "tailwindcss": "^4.1.12"
   }
 }

