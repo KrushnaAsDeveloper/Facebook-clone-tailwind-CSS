@@ -12,19 +12,19 @@ router.get('/', function(req, res, next) {
 router.post('/register', function(req,res){
   var userdata = new userModel({
     username:req.body.username, 
-    
+    secrate:req.body.secrate
      
   });
   userModel.register(userdata, req.body.password)
   .then(function (registereduser) {
     passport.authenticate("local")(req,res, function(){
-      res.redirect('/profile');
+      res.redirect("/profile");
     })
   })
 })
 
 router.get('/profile', isLoggedIn, function (req,res) {
-  res.render('profile');
+  res.render("profile")
 
 })
 router.post("/login", passport.authenticate("local", {

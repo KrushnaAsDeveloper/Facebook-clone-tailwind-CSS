@@ -17,8 +17,8 @@ app.set('view engine', 'ejs');
 app.use(expressSession({
   resave:false,
   saveUninitialized: false,
-  secret:"helowwwwwwwtrerereer"
-}))
+  secret:"hellow hwllow"
+}));
 app.use(passport.initialize());
 app.use(passport.session());
 passport.serializeUser(usersRouter.serializeUser());
